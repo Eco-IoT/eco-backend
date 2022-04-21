@@ -1,0 +1,10 @@
+# Server config
+server.port=8080
+# Database config
+spring.datasource.url=jdbc:mariadb://127.0.0.1:3306/eco
+spring.datasource.username=eco
+spring.datasource.password=passwd
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=validate
+# Needed to get the UserRepository in the SecurityConfiguration when there is no Session for Hibernate yet.
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true

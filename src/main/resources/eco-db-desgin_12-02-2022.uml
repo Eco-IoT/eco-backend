@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>ecb6978d-b186-47c5-86d5-cd1841ac2579</OriginalElement>
+  <nodes>
+    <node x="142.98214285714295" y="744.0">ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event</node>
+    <node x="284.5000000000001" y="237.0">ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event_type</node>
+    <node x="8.000000000000085" y="432.0">ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device</node>
+    <node x="62.500000000000085" y="237.0">ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device_type</node>
+    <node x="71.50000000000011" y="0.0">ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.user</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device_type" relationship="REFERENCES">
+      <point x="49.25" y="-130.0" />
+      <point x="155.75000000000009" y="399.0" />
+      <point x="161.00000000000009" y="399.0" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device_type" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.user" relationship="REFERENCES">
+      <point x="2.8421709430404007E-14" y="-67.5" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.user" relationship="REFERENCES">
+      <point x="-49.25" y="-130.0" />
+      <point x="57.250000000000085" y="399.0" />
+      <point x="52.000000000000085" y="399.0" />
+      <point x="52.000000000000085" y="211.0" />
+      <point x="161.0000000000001" y="211.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.device" relationship="REFERENCES">
+      <point x="-49.25" y="-92.5" />
+      <point x="192.23214285714295" y="712.0" />
+      <point x="106.50000000000009" y="712.0" />
+      <point x="0.0" y="130.0" />
+    </edge>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event_type" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.user" relationship="REFERENCES">
+      <point x="0.0" y="-67.5" />
+      <point x="383.0000000000001" y="211.0" />
+      <point x="161.0000000000001" y="211.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event" target="ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event_type" relationship="REFERENCES">
+      <point x="49.25" y="-92.5" />
+      <point x="290.73214285714295" y="712.0" />
+      <point x="383.0000000000001" y="712.0" />
+      <point x="0.0" y="67.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="465.0" y="452.0" />
+  <SelectedNodes>
+    <node>ecb6978d-b186-47c5-86d5-cd1841ac2579.TABLE:eco.event_type</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
