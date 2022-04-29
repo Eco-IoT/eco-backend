@@ -1,10 +1,7 @@
 package de.robinmucha.ecobackend.model.controller.user;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import de.robinmucha.ecobackend.model.assembler.UserModelAssembler;
 import de.robinmucha.ecobackend.model.entity.User;
-import de.robinmucha.ecobackend.model.exception.user.UserNotFoundException;
 import de.robinmucha.ecobackend.model.repository.UserRepository;
 import de.robinmucha.ecobackend.security.utils.UserAuthenticationHelper;
 import org.springframework.hateoas.EntityModel;
@@ -25,6 +22,9 @@ public class UserControllerImpl implements UserController {
     @Override
     @PostMapping("/users")
     public EntityModel<User> newUser(@RequestBody User newUser) {
+
+        userRepository.isUsernameUniqueElseThrowUsernameAlreadyExistsEx(newUser);
+
         return assembler.toModel(userRepository.save(newUser));
     }
 

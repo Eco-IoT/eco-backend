@@ -39,6 +39,8 @@ public class DeviceControllerImpl implements DeviceController {
 
         DeviceAuthenticationHelper.isUserOwnerOfDeviceElseThrowDeviceCreationForbiddenEx(newDevice, requestedUser);
 
+        deviceRepository.isDevicenameUniqueElseThrowDevicenameAlreadyExistsEx(newDevice);
+
         return assembler.toModel(deviceRepository.save(newDevice));
     }
 
