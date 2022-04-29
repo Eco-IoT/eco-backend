@@ -10,7 +10,7 @@
     </parent>
     <groupId>de.robinmucha</groupId>
     <artifactId>eco-backend</artifactId>
-    <version>0.1.0.0</version>
+    <version>0.1.1.0</version>
     <name>Eco-backend</name>
     <description>REST API written in Java using the Spring-Framework</description>
     <properties>
